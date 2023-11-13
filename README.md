@@ -6,3 +6,4 @@ https://www.coursera.org/learn/programacion-python/home/
 
 Week 1: 
 - TRM Calculator
+- Project m1: Calculators with command-line interface
