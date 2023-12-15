@@ -1,4 +1,4 @@
-import indexes_calc as calc
+import calculadora_indices as calc
 
 
 # Estimate the number of calories a person needs to consume each day inorder to lose weight

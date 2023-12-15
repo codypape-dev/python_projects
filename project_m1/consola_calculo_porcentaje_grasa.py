@@ -13,8 +13,7 @@ def exec_calculate_bfp() -> None:
     weight = float(input("Ingrese el peso de la persona en kilogramos: "))
     height = float(input("Ingrese la estatura de la persona en metros: "))
     age = int(input("Ingrese la edad de la persona en años: "))
-    genre = str.upper(input("Ingrese el genero de la persona: M para masculino y F para femenino: "))
-    genre_value = 10.8 if genre == "M" else 0
+    genre = str.upper(input("Ingrese el valor de genero: 10.8 para masculino y 0 para femenino: "))
     print("Su porcentaje de grasa corporal es: " +
           str(calc.calculate_body_fat_percentage(weight, height, age, genre_value)) + "%")
 

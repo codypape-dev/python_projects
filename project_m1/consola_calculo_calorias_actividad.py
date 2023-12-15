@@ -1,4 +1,4 @@
-import indexes_calc as calc
+import calculadora_indices as calc
 
 
 # Calculates the basal metabolic rate (bmr) by activity level following the formula:

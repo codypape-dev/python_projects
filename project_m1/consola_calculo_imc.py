@@ -1,11 +1,11 @@
-import indexes_calc as calc
+import calculadora_indices as calc
 
 
 # Calculates the body mass index following the formula:
 # BMI = weight (kg)/(height(m))^2
 # using the information provided by the user
 # the prompt uses spanish for the user input
-def exec_calculate_bmi() -> None:
+def calcular_IMC() -> None:
     print("Esta herramienta calcula el índice de masa corporal de una persona.",
           "Este metodo se utiliza para estimar si el peso de una persona es ",
           "adecuado con respecto a su altura. El IMC se calcula como la razón",
