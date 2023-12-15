@@ -11,7 +11,7 @@ def exec_calculate_calories_for_weight_lose() -> None:
     height = float(input("Ingrese la estatura de la persona en centimetros: "))
     age = int(input("Ingrese la edad de la persona en años: "))
     genre_value = float(input("Ingrese el valor de género de la persona: 5 para masculino y -161 para femenino: "))
-    print(calc.calculate_calories_for_weight_lose(weight, height, age, genre_value))
+    print(calc.consumo_calorias_recomendado_para_adelgazar(weight, height, age, genre_value))
 
 
 exec_calculate_calories_for_weight_lose()

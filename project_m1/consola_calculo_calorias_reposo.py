@@ -14,7 +14,7 @@ def exec_calculate_bmr_at_rest() -> None:
     age = int(input("Ingrese la edad de la persona en años: "))
     genre_value = float(input("Ingrese el valor de género de la persona: 5 para masculino y -161 para femenino: "))
     print("Su tasa metabólica basal es: ",
-          calc.calculate_bmr_at_rest(weight, height, age, genre_value), " cal")
+          calc.calcular_calorias_en_reposo(weight, height, age, genre_value), " cal")
 
 
 exec_calculate_bmr_at_rest()

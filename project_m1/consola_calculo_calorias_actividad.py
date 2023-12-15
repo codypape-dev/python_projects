@@ -22,7 +22,7 @@ def exec_calculate_bmr_by_activity_level() -> None:
     print("Nivel: Atleta (entrenamientos mañana y tarde)        - Valor de actividad 1.9")
     activity_level = float(input("Ingrese el valor de actividad que se ajusta a su rutina de ejercicio semanal: "))
     print("Su tasa metabólica basal es: ",
-          calc.calculate_bmr_by_activity_level(weight, height, age, genre_value,activity_level), " cal")
+          calc.calcular_calorias_en_actividad(weight, height, age, genre_value, activity_level), " cal")
 
 
 exec_calculate_bmr_by_activity_level()

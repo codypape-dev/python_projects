@@ -1,4 +1,4 @@
-import indexes_calc as calc
+import calculadora_indices as calc
 
 
 # Calculates the body fat percentage following the formula:
@@ -13,9 +13,9 @@ def exec_calculate_bfp() -> None:
     weight = float(input("Ingrese el peso de la persona en kilogramos: "))
     height = float(input("Ingrese la estatura de la persona en metros: "))
     age = int(input("Ingrese la edad de la persona en años: "))
-    genre = str.upper(input("Ingrese el valor de genero: 10.8 para masculino y 0 para femenino: "))
+    genre_value = float(input("Ingrese el valor de genero: 10.8 para masculino y 0 para femenino: "))
     print("Su porcentaje de grasa corporal es: " +
-          str(calc.calculate_body_fat_percentage(weight, height, age, genre_value)) + "%")
+          str(calc.calcular_porcentaje_grasa(weight, height, age, genre_value)) + "%")
 
 
 exec_calculate_bfp()

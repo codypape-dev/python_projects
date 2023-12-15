@@ -22,14 +22,14 @@ def calcular_calorias_en_reposo(peso: float, altura: float, edad: int, valor_gen
 
 # Calculates the basal metabolic rate (bmr) by activity level following the formula:
 # BMR_by_activity = BMR_at_rest * activity_level
-def calculate_bmr_by_activity_level(peso: float, altura: float, edad: int, valor_genero: float,
-                                    activity_level: float) -> float:
+def calcular_calorias_en_actividad(peso: float, altura: float, edad: int, valor_genero: float,
+                                   activity_level: float) -> float:
     bmr_at_rest = calcular_calorias_en_reposo(peso, altura, edad, valor_genero)
     return round(bmr_at_rest * activity_level, 2)
 
 
 # Estimate the number of calories a person needs to consume each day inorder to lose peso
-def calcular_calorias_en_actividad(peso: float, altura: float, edad: int, valor_genero: float) -> str:
+def consumo_calorias_recomendado_para_adelgazar(peso: float, altura: float, edad: int, valor_genero: float) -> str:
     bmr_at_rest = calcular_calorias_en_reposo(peso, altura, edad, valor_genero)
     return "Para adelgazar es recomendado que consumas entre: " + str(round(bmr_at_rest * 0.80, 2)) + \
         " y " + str(round(bmr_at_rest * 0.85, 2)) + ' calorías al día.'
